@@ -7,10 +7,6 @@ by step on how to crop a photo in 3 ways, manually with the windows photo editor
 
 ---
 
-## Set Up
-1. Make sure the folder crop_differences is downloaded and contains click_crop.py, auto_crop.py, cropped_image_data.csv, and auto_crop_image_data.csv
-1. 
-1. 
 
 ## Manual Crop
 1. Go to file folder for this project
