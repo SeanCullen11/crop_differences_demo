@@ -19,6 +19,8 @@ by step on how to crop a photo in 3 ways, manually with the windows photo editor
 - After each leaf the photo needs to be reopened and this process repeats for each leaf
 - This is the process that would need to be done on all 10 leaves in all 100 photos
   - taking 30-45 seconds per leaf 
+  
+https://drive.google.com/file/d/18jQSt_qxTOOoGwVCECnGRQSf6XmgTxWd/view?usp=sharing
 
 ## Click Crop
 1. Run click_crop.py
@@ -29,6 +31,8 @@ by step on how to crop a photo in 3 ways, manually with the windows photo editor
 1. The leaf has been cropped and saved, look in the project folder for the new image. Should be saved as crop_differences_sampeimage_1
 - 4-5 seconds a leaf 
 
+https://drive.google.com/file/d/1BiPPsXbUTvlNmqibmtvlY31bxKtB-sq4/view?usp=sharing
+
 ## Auto Crop
 1. Run auto_crop.py
 1. A dialogue box will pop up and ask you to select an image, select sampleimage.jpg and hit open
@@ -37,3 +41,5 @@ by step on how to crop a photo in 3 ways, manually with the windows photo editor
 1. Close the program and wait around 5 seconds for the pictures to crop and save automatically 
 1. Check the folder and see that there are now 10 new cropped photos as well as the black and white threshold photo teh computer used to find the leaves 
 - .4 seconds a leaf 
+
+https://drive.google.com/file/d/1i2Z8GI9X4eOGFNi6Rv1OknpgKkjifFWA/view?usp=sharing
