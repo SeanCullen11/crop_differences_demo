@@ -133,15 +133,6 @@ def crop():
             # Save new file location
             file_location = path + "/" + saved_file
 
-            # open existing CSV file and store img height, width, and file path
-            with open('auto_crop_image_data.csv', 'a') as f:
-                writer = csv.writer(f)
-                writer.writerow(([height, width, file_location]))
-                f.close()
-
-            # Print to terminal to confirm file is saved
-            print(saved_file + " has been written to cropped_image_data.csv")
-
 
 # Select file and get file name
 def upload_action(event=None):
