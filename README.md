@@ -54,7 +54,7 @@ https://drive.google.com/file/d/1KdP3_PZqEYQFgo5P6pnLr6v2njChuLEh/view?usp=shari
 1. You'll see the image displayed with each leaf selected and that each leave has been cropped and saved
 1. Check the left hand side to see that all the new leaf images are saved there 
 
-- .4 seconds a leaf 
+- .5 seconds a leaf 
 
 Auto Crop Example: 
 https://drive.google.com/file/d/11JnmifanwKmvVY4aW_9e8Ab_oU49vcaJ/view?usp=sharing 
