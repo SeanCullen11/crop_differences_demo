@@ -1,3 +1,4 @@
+import sys
 import cv2
 from PIL import Image
 from tkinter import filedialog
@@ -68,24 +69,24 @@ def click_event(event, x, y, flags, params):
 
             # Split our filename to get the desired sections
             # and exclude the .jpg or .png extension
-            fn_split = filename.split("/")
-            species = fn_split[-2]
-            file = fn_split[-1].replace('.jpg', '')
-            file = file.replace('.png', '')
+            # fn_split = filename.split("/")
+            # species = fn_split[-2]
+            # file = fn_split[-1].replace('.jpg', '')
+            # file = file.replace('.png', '')
 
             # Merge back together our file name excluding the
             # parts we do not want
-            a = '/'
-            path = fn_split[:-1]
-            path = a.join(path)
-            print(path)
+            # a = '/'
+            # path = fn_split[:-1]
+            # path = a.join(path)
+            # print(path)
 
             # Save cropped image and cropped image file name
-            saved_file = species + '_' + file + '_' + str(count) + '.jpg'
-            img_crop_res.save(path + "/" + species + '_' + file + '_' + str(count) + '.jpg')
+            saved_file = 'sampeimage' + '_' + str(count) + '.jpg'
+            img_crop_res.save('sampeimage' + '_' + str(count) + '.jpg')
 
             # Print the file name and where it was saved
-            print('Saved File: ' + saved_file + ' to ' + path)
+            print('Saved File: ' + saved_file)
 
             # convert image object into array
             imageinfo = numpy.asarray(img_crop_res)
@@ -95,21 +96,29 @@ def click_event(event, x, y, flags, params):
             width = imageinfo.shape[1]
 
             # Save new file location
-            file_location = path + "/" + saved_file
+            # file_location = path + "/" + saved_file
 
 
 # Prompt use to select the file they wish to crop and return the file path
-def upload_action(event=None):
-    filename = filedialog.askopenfilename()
-    return filename
+# def upload_action(event=None):
+#     filename = filedialog.askopenfilename()
+#     return filename
 
 
 if __name__ == "__main__":
-    # Declare variables we will use in click event,
-    # open image file, and set variables
-    filename = upload_action()
+
+    # Upload with dialogue box
+    # filename = upload_action()
+
+    # Upload with hardcoded file
+    # filename = 'sampeimage.jpg'
+
+    assert len(sys.argv) >= 2, 'Please specify an image.'
+    filename = sys.argv[1]
     img = cv2.imread(filename, 1)
     count = 0
 
     # Call main function to open window
     main()
+
+

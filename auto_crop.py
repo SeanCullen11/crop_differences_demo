@@ -1,4 +1,4 @@
-from tkinter import filedialog
+import sys
 import matplotlib.pyplot as plt
 import matplotlib.patches as mpatches
 from skimage.filters import threshold_otsu
@@ -9,7 +9,6 @@ from skimage.color import label2rgb
 from matplotlib import image
 import cv2
 from PIL import Image
-import csv
 import numpy
 
 # Local variables to help set the x and y axies and declare the list
@@ -50,8 +49,6 @@ def segment_image(img):
             minr, minc, maxr, maxc = region.bbox
             length = (maxr - minr)
             width = (maxc - minc)
-            # print(maxc - minc) # x length
-            # print(maxr - minr) # y length
 
             # Only draw boxes around segments to the right 1000 pixels and that are wider than long
             # This helps us not segment out parts of the ruler in or image that mess with our data
@@ -61,7 +58,6 @@ def segment_image(img):
                 rect = mpatches.Rectangle((minc, minr), maxc - minc, maxr - minr,
                                       fill=False, edgecolor='red', linewidth=2)
                 ax.add_patch(rect)
-                # print(minc, minr, " ", maxc, maxr)
 
                 # Add values to a list
                 list.append(minc)
@@ -101,7 +97,7 @@ def crop():
             # Split our filename to get the desired sections
             # and exclude the .jpg or .png extension
             fn_split = filename.split("/")
-            species = fn_split[-2]
+
             file = fn_split[-1].replace('.jpg', '')
             file = file.replace('.png', '')
 
@@ -117,8 +113,8 @@ def crop():
             runs += 1
 
             # Save cropped image and cropped image file name
-            saved_file = species + '_' + file + '_' + 'AUTOCROP' + '_' + str(runs) + '.jpg'
-            img_crop_res.save(path + "/" + species + '_' + file + '_' + 'AUTOCROP' + '_' + str(runs) + '.jpg')
+            saved_file = file + '_' + 'AUTOCROP' + '_' + str(runs) + '.jpg'
+            img_crop_res.save('sampeimage''_' + 'AUTOCROP' + '_' + str(runs) + '.jpg')
 
             # Print the file name and where it was saved
             print('Saved File: ' + saved_file + ' to ' + path)
@@ -134,12 +130,6 @@ def crop():
             file_location = path + "/" + saved_file
 
 
-# Select file and get file name
-def upload_action(event=None):
-    filename = filedialog.askopenfilename()
-    return filename
-
-
 # Threshold the image to be segmented
 def img_thresh():
 
@@ -151,13 +141,11 @@ def img_thresh():
 
     # all pixels value above 200 will be set to 255
     ret, thresh2 = cv2.threshold(image, 200, 255, cv2.THRESH_BINARY_INV)
-    # ret, thresh2 = cv2.threshold(image, 120, 255, cv2.THRESH_BINARY_INV)
-    # ret, thresh2 = cv2.threshold(image, 220, 255, cv2.THRESH_BINARY_INV)
+
 
     # Split our filename to get the desired sections
     # and exclude the .jpg or .png extension
     fn_split = filename.split("/")
-    species = fn_split[-2]
     file = fn_split[-1].replace('.jpg', '')
     file = file.replace('.png', '')
 
@@ -168,13 +156,22 @@ def img_thresh():
     path = a.join(path)
 
     # Save thresholded image and image name
-    cv2.imwrite(path + "/" + species + '_' + file + '_' + 'THRESH' + '.jpg', thresh2)
-    imagename = path + "/" + species + '_' + file + '_' + 'THRESH' + '.jpg'
+    cv2.imwrite('sampeimage' + '_' + 'THRESH' + '.jpg', thresh2)
+    imagename = 'sampeimage' + '_' + 'THRESH' + '.jpg'
 
     print(imagename)
     return imagename
 
 
 if __name__ == '__main__':
-    filename = upload_action()
+
+    # Upload with dialogue box
+    # filename = upload_action()
+
+    # Upload with hardcoded file
+    # filename = 'sampeimage.jpg'
+
+    # Upload with arguments in terminal
+    assert len(sys.argv) >= 2, 'Please specify an image.'
+    filename = sys.argv[1]
     main()
