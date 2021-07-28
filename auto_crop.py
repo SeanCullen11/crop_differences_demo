@@ -175,3 +175,4 @@ if __name__ == '__main__':
     assert len(sys.argv) >= 2, 'Please specify an image.'
     filename = sys.argv[1]
     main()
+
