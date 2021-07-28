@@ -20,7 +20,8 @@ by step on how to crop a photo in 3 ways, manually with the windows photo editor
 - This is the process that would need to be done on all 10 leaves in all 100 photos
   - taking 30-45 seconds per leaf 
   
-https://drive.google.com/file/d/18jQSt_qxTOOoGwVCECnGRQSf6XmgTxWd/view?usp=sharing
+Manual Crop Example: 
+https://drive.google.com/file/d/10po35P8ZXJkW8gyPmAgYHNLQhpCvUnPN/view?usp=sharing
 
 ## Click Crop
 1. Run click_crop.py
@@ -31,15 +32,24 @@ https://drive.google.com/file/d/18jQSt_qxTOOoGwVCECnGRQSf6XmgTxWd/view?usp=shari
 1. The leaf has been cropped and saved, look in the project folder for the new image. Should be saved as crop_differences_sampeimage_1
 - 4-5 seconds a leaf 
 
-https://drive.google.com/file/d/1BiPPsXbUTvlNmqibmtvlY31bxKtB-sq4/view?usp=sharing
+
+
 
 ## Auto Crop
-1. Run auto_crop.py
-1. A dialogue box will pop up and ask you to select an image, select sampleimage.jpg and hit open
-1. The program will take a second to detect the leaves in the image then display the segmented image 
-1. See how the leaves are highlighted by the red boxes automatically by the program 
-1. Close the program and wait around 5 seconds for the pictures to crop and save automatically 
-1. Check the folder and see that there are now 10 new cropped photos as well as the black and white threshold photo teh computer used to find the leaves 
+1. Make sure you have the crop_difference folder downloaded 
+1. Click Google Colab link below
+1. Click the folder icon in the left sid eof the screen 
+1. Click the "Upload to session storgae" button in the top left 
+1. Go to your crop difference folder and select "sampleimage.jpg", wait for it to upload
+1. Run the first code block of import statements
+1. Run the second code block and scroll down to the bottom of the page to see the results 
+1. You'll see the image displayed with each leaf selected and that each leave has been cropped and saved
+1. Check the left hand side to see that all the new leaf images are saved there 
+
 - .4 seconds a leaf 
 
-https://drive.google.com/file/d/1i2Z8GI9X4eOGFNi6Rv1OknpgKkjifFWA/view?usp=sharing
+Auto Crop Example: 
+https://drive.google.com/file/d/192qQT0Du4cn2HgSw_onQ4DUiYVHIAFmP/view?usp=sharing 
+
+Auto Crop Colab: 
+https://colab.research.google.com/drive/1zo7i5ofDCsCv--TXrYBsewqW2q9ts7Ok?usp=sharing
