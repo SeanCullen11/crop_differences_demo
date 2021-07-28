@@ -7,6 +7,11 @@ by step on how to crop a photo in 3 ways, manually with the windows photo editor
 
 ---
 
+##Intro to project
+My name is Sean Cullen and I am currently a senior Computer Science major at NEIU. I've been working with Beth over the past 2 months to process leaf images from the Field Museum's herbarium and get them into the correct format to be fed into a neural network. This involves taking our images of 10 leaves and segmenting them into individual leaf images. This process can be done in many ways, but some ways are much more time efficient than others. This demo will help demonstrate those differences in time efficiency. 
+
+##Intro to Github
+Welcome to Github! This an environment very familiar to a Computer Science students such as myself but might not be for you. This is a website used for people to display and share programs they have made. Though using it can be intimidating at times, it's an excellent tool for developers and scientist to share their work. This project, crop_differences, is available to download so you can open and even run my code on your computer. Below will be instructions on how to execute each type of crop method
 
 ## Manual Crop
 1. Go to file folder for this project
@@ -21,17 +26,20 @@ by step on how to crop a photo in 3 ways, manually with the windows photo editor
   - taking 30-45 seconds per leaf 
   
 Manual Crop Example: 
-https://drive.google.com/file/d/10po35P8ZXJkW8gyPmAgYHNLQhpCvUnPN/view?usp=sharing
+https://drive.google.com/file/d/15Ivv2Hdhk_74feMjDyNGZq72tNlGG4jK/view?usp=sharing
 
 ## Click Crop
-1. Run click_crop.py
-1. A dialogue box will pop up and ask you to select an image, select sampleimage.jpg and hit open
+* This is not executable without a IDE (currently)
+1. Go to the terminal under the crop difference folder and type in `python click_crop.py sampleimage.jpg` and hit enter
+1. A box will pop up with the sample image displayed
 1. Find the leaf in the upper left hand corner 
 1. Click first in the upper left hand corner of that leaf, then in the lower right hand corner capturing the entire leaf 
 1. Close the image
 1. The leaf has been cropped and saved, look in the project folder for the new image. Should be saved as crop_differences_sampeimage_1
 - 4-5 seconds a leaf 
 
+Click Crop Example: 
+https://drive.google.com/file/d/1KdP3_PZqEYQFgo5P6pnLr6v2njChuLEh/view?usp=sharing 
 
 
 
@@ -49,7 +57,8 @@ https://drive.google.com/file/d/10po35P8ZXJkW8gyPmAgYHNLQhpCvUnPN/view?usp=shari
 - .4 seconds a leaf 
 
 Auto Crop Example: 
-https://drive.google.com/file/d/192qQT0Du4cn2HgSw_onQ4DUiYVHIAFmP/view?usp=sharing 
+https://drive.google.com/file/d/11JnmifanwKmvVY4aW_9e8Ab_oU49vcaJ/view?usp=sharing 
 
 Auto Crop Colab: 
 https://colab.research.google.com/drive/1zo7i5ofDCsCv--TXrYBsewqW2q9ts7Ok?usp=sharing
+
