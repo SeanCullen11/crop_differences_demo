@@ -62,3 +62,5 @@ https://drive.google.com/file/d/11JnmifanwKmvVY4aW_9e8Ab_oU49vcaJ/view?usp=shari
 Auto Crop Colab: 
 https://colab.research.google.com/drive/1zo7i5ofDCsCv--TXrYBsewqW2q9ts7Ok?usp=sharing
 
+## Graphs of crop times
+https://docs.google.com/spreadsheets/d/1x_OYcHx1gBu4R7ybuwtBwoeNEDzPJHiLyhrg7VpjfuU/edit?usp=sharing
