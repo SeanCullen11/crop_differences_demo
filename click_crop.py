@@ -82,8 +82,8 @@ def click_event(event, x, y, flags, params):
             # print(path)
 
             # Save cropped image and cropped image file name
-            saved_file = 'sampeimage' + '_' + str(count) + '.jpg'
-            img_crop_res.save('sampeimage' + '_' + str(count) + '.jpg')
+            saved_file = 'sampleimage' + '_' + str(count) + '.jpg'
+            img_crop_res.save('sampleimage' + '_' + str(count) + '.jpg')
 
             # Print the file name and where it was saved
             print('Saved File: ' + saved_file)
@@ -111,7 +111,7 @@ if __name__ == "__main__":
     # filename = upload_action()
 
     # Upload with hardcoded file
-    # filename = 'sampeimage.jpg'
+    # filename = 'sampleimage.jpg'
 
     assert len(sys.argv) >= 2, 'Please specify an image.'
     filename = sys.argv[1]

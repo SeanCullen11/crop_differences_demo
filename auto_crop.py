@@ -114,7 +114,7 @@ def crop():
 
             # Save cropped image and cropped image file name
             saved_file = file + '_' + 'AUTOCROP' + '_' + str(runs) + '.jpg'
-            img_crop_res.save('sampeimage''_' + 'AUTOCROP' + '_' + str(runs) + '.jpg')
+            img_crop_res.save('sampleimage''_' + 'AUTOCROP' + '_' + str(runs) + '.jpg')
 
             # Print the file name and where it was saved
             print('Saved File: ' + saved_file + ' to ' + path)
@@ -156,8 +156,8 @@ def img_thresh():
     path = a.join(path)
 
     # Save thresholded image and image name
-    cv2.imwrite('sampeimage' + '_' + 'THRESH' + '.jpg', thresh2)
-    imagename = 'sampeimage' + '_' + 'THRESH' + '.jpg'
+    cv2.imwrite('sampleimage' + '_' + 'THRESH' + '.jpg', thresh2)
+    imagename = 'sampleimage' + '_' + 'THRESH' + '.jpg'
 
     print(imagename)
     return imagename
@@ -169,7 +169,7 @@ if __name__ == '__main__':
     # filename = upload_action()
 
     # Upload with hardcoded file
-    # filename = 'sampeimage.jpg'
+    # filename = 'sampleimage.jpg'
 
     # Upload with arguments in terminal
     assert len(sys.argv) >= 2, 'Please specify an image.'
