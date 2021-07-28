@@ -13,8 +13,15 @@ My name is Sean Cullen and I am currently a senior Computer Science major at NEI
 ## Intro to Github
 Welcome to Github! This an environment very familiar to a Computer Science students such as myself but might not be for you. This is a website used for people to display and share programs they have made. Though using it can be intimidating at times, it's an excellent tool for developers and scientist to share their work. This project, crop_differences, is available to download so you can open and even run my code on your computer. Below will be instructions on how to execute each type of crop method
 
-## Manual Crop
-1. Go to file folder for this project
+## Installing the repo
+1. Find the green code button in the upper right area of the screen
+2. click on the down arrow on the right
+3. Click 'Download ZIP'
+4. Open the ZIP file and extract it to a desired location on your computer 
+5. The openable folder labeled 'crop_differences_demo-master' has all the needed files
+
+## Manually Crop Images using Windows Photos
+1. Open Windows Explorer and navigate to the crop_difference folder
 1. Open sampleimage.jpg 
 1. click the button crop in the top menu 
 1. size the box to fit just the leaf in the upper lefthand corner
@@ -29,13 +36,16 @@ Manual Crop Example:
 https://drive.google.com/file/d/15Ivv2Hdhk_74feMjDyNGZq72tNlGG4jK/view?usp=sharing
 
 ## Click Crop
-* This is not executable without a IDE (currently)
-1. Go to the terminal under the crop difference folder and type in `python click_crop.py sampleimage.jpg` and hit enter
-1. A box will pop up with the sample image displayed
-1. Find the leaf in the upper left hand corner 
-1. Click first in the upper left hand corner of that leaf, then in the lower right hand corner capturing the entire leaf 
-1. Close the image
-1. The leaf has been cropped and saved, look in the project folder for the new image. Should be saved as crop_differences_sampeimage_1
+* This is only executable with an instance of Python 3 installed on your local computer
+1. In the command line interface (PowerShell on Windows, Terminal on a Mac), change your working directory to crop_differences_demo using 'cd (file path to your crop_difference folder)
+   * example: 'cd C:\Users\Sean\PycharmProjects\crop_differences'
+2. Type `pip -r requirements.txt` and wait for packages to install
+3. Next type in `python click_crop.py sampleimage.jpg` and hit enter
+4. A box will pop up with the sample image displayed
+5. Find the leaf in the upper left hand corner 
+6. Click first in the upper left hand corner of that leaf, then in the lower right hand corner capturing the entire leaf 
+7. Close the image
+8. The leaf has been cropped and saved, look in the project folder for the new image. Should be saved as crop_differences_sampeimage_1
 - 4-5 seconds a leaf 
 
 Click Crop Example: 
@@ -63,4 +73,6 @@ Auto Crop Colab:
 https://colab.research.google.com/drive/1zo7i5ofDCsCv--TXrYBsewqW2q9ts7Ok?usp=sharing
 
 ## Graphs of crop times
-https://docs.google.com/spreadsheets/d/1x_OYcHx1gBu4R7ybuwtBwoeNEDzPJHiLyhrg7VpjfuU/edit?usp=sharing
+![alt text](Crop_Differences_Per_Leaf_(secs).png)
+![alt text](Crop_Times_for_100_leaf_images_with_10_leaves_(mins).png)
+![alt text](Crop_Times_for_100_leaf_images_with_10 leaves_(hours).png)
