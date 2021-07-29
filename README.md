@@ -11,7 +11,7 @@ by step on how to crop a photo in 3 ways, manually with the windows photo editor
 My name is Sean Cullen and I am currently a senior Computer Science major at NEIU. I've been working with Beth over the past 2 months to process leaf images from the Field Museum's herbarium and get them into the correct format to be fed into a neural network. This involves taking our images of 10 leaves and segmenting them into individual leaf images. This process can be done in many ways, but some ways are much more time efficient than others. This demo will help demonstrate those differences in time efficiency. 
 
 ## Intro to Github
-Welcome to Github! This an environment very familiar to a Computer Science students such as myself but might not be for you. This is a website used for people to display and share programs they have made. Though using it can be intimidating at times, it's an excellent tool for developers and scientist to share their work. This project, crop_differences, is available to download so you can open and even run my code on your computer. Below will be instructions on how to execute each type of crop method
+Welcome to Github! This an environment very familiar to a Computer Science students such as myself but might not be for you. This is a website used for people to display and share programs they have made. Though using it can be intimidating at times, it's an excellent tool for developers and scientist to share their work. This project, crop_differences, is available to download so you can open and even run my code on your computer. Below will be instructions on how to install this repo and execute each type of crop method
 
 ## Installing the repo
 1. Find the green code button in the upper right area of the screen
