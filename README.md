@@ -77,4 +77,4 @@ https://colab.research.google.com/drive/1zo7i5ofDCsCv--TXrYBsewqW2q9ts7Ok?usp=sh
 
 ![alt text](Crop_Times_for_100_leaf_images_with_10_leaves_(mins).png)
 
-![alt text](Crop_Times_for_100_leaf_images_with_10 leaves_(hours).png)
+![alt text](Crop_Times_for_100_leaf_images_with_10_leaves_(hours).png)
