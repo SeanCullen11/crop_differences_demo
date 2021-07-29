@@ -45,7 +45,7 @@ https://drive.google.com/file/d/15Ivv2Hdhk_74feMjDyNGZq72tNlGG4jK/view?usp=shari
 5. Find the leaf in the upper left hand corner 
 6. Click first in the upper left hand corner of that leaf, then in the lower right hand corner capturing the entire leaf 
 7. Close the image
-8. The leaf has been cropped and saved, look in the project folder for the new image. Should be saved as crop_differences_sampeimage_1
+8. The leaf has been cropped and saved, look in the project folder for the new image. Should be saved as crop_differences_sampleimage_1
 - 4-5 seconds a leaf 
 
 Click Crop Example: 
@@ -62,7 +62,7 @@ https://drive.google.com/file/d/1KdP3_PZqEYQFgo5P6pnLr6v2njChuLEh/view?usp=shari
 1. Run the first code block of import statements
 1. Run the second code block and scroll down to the bottom of the page to see the results 
 1. You'll see the image displayed with each leaf selected and that each leave has been cropped and saved
-1. Check the left hand side to see that all the new leaf images are saved there 
+1. Check the left hand side to see that all the new leaf images are saved there (These images might take a bit to load, be patient)
 
 - .4 seconds a leaf 
 
